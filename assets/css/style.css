@@ -21,6 +21,7 @@ header {
 }
 
 .slider--width{
+    width: auto;
     height: 100%;
     display: flex;
     transition: all ease 0.3s;
@@ -31,6 +32,7 @@ header {
     height: inherit;
     background-position: center;
     background-size: cover;
+    transition: all ease 0.3s;
 }
 
 .slider--controls {
