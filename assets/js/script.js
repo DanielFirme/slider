@@ -26,17 +26,26 @@ function updateMargin(control){
         }, 500);
         
     }
+    // if(control === 2){
+    //     for(let i = 0; i < (slides.length - 1); i++){
+    //         slider.append(slides[i]);
+    //     }
+    //     $$('.slider--item')[0].style.transition = "none";
+    //     $$('.slider--item')[0].style.marginLeft = `-${$('.slider--item').clientWidth}px`;
+    //     setTimeout(()=>{
+    //         $$('.slider--item')[0].style.transition = "all ease 0.5s";
+    //         $$('.slider--item')[0].style.marginLeft = "0px";
+    //     }, 0.00000000000000000000000000000000000000000001);  
+    // }
     if(control === 2){
-        for(let i = 0; i < (slides.length - 1); i++){
-            slider.append(slides[i]);
-        }
+        slider.prepend(slides[slides.length - 1]);
         $$('.slider--item')[0].style.transition = "none";
         $$('.slider--item')[0].style.marginLeft = `-${$('.slider--item').clientWidth}px`;
         setTimeout(()=>{
             $$('.slider--item')[0].style.transition = "all ease 0.5s";
             $$('.slider--item')[0].style.marginLeft = "0px";
         }, 0.00000000000000000000000000000000000000000001);  
-    }  
+    } 
 }
 
 sliderControl[0].addEventListener('click', goPrev);
