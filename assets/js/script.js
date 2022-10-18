@@ -42,4 +42,4 @@ function updateMargin(control){
 sliderControl[0].addEventListener('click', goPrev);
 sliderControl[1].addEventListener('click', goNext);
 
-//setInterval(goNext, 5000);
+setInterval(goNext, 5000);
